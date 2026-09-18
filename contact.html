@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment or ask a question at Lumen Lane Salon in York, PA.">
+  <title>Book | Lumen Lane Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">Lumen Lane</span>
+        <span class="logo-sub">Salon · York PA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta" aria-current="page">Book</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Appointments</p>
+        <h1>Book or say hello</h1>
+        <p class="section-lead">This form is front-end only for the sample site - it shows a success message and does not send email.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <aside class="contact-details" aria-labelledby="visit-heading">
+          <h2 id="visit-heading">Visit</h2>
+          <p>By appointment in downtown York. Street parking on Lumen Lane and a public lot one block south.</p>
+          <ul class="contact-list">
+            <li>
+              <strong>Address</strong>
+              <span>214 Lumen Lane<br>York, PA 17401</span>
+            </li>
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+17175550188">(717) 555-0188</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:hello@lumenlanesalon.example">hello@lumenlanesalon.example</a>
+            </li>
+            <li>
+              <strong>Hours</strong>
+              <table class="hours-table">
+                <tbody>
+                  <tr><th scope="row">Tue - Fri</th><td>9:00 am - 6:00 pm</td></tr>
+                  <tr><th scope="row">Saturday</th><td>9:00 am - 3:00 pm</td></tr>
+                  <tr><th scope="row">Sun - Mon</th><td>Closed</td></tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="form-card">
+          <h2 id="contact-heading">Request a time</h2>
+          <p class="form-intro">Share a few details and a preferred window. On a live site this would route to the front desk.</p>
+
+          <form data-mock-form novalidate>
+            <div class="form-success" tabindex="-1">
+              Thanks - your request was captured in this demo. No message was sent.
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(717) 555-0100">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="service">Service interest</label>
+                <select id="service" name="service">
+                  <option value="">Select one</option>
+                  <option>Cut and finish</option>
+                  <option>Lived-in color / balayage</option>
+                  <option>Highlights or gloss</option>
+                  <option>Blowout or event style</option>
+                  <option>Consult only</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="stylist">Preferred stylist</label>
+                <select id="stylist" name="stylist">
+                  <option value="">No preference</option>
+                  <option>Mara Ellis</option>
+                  <option>Jordan Blake</option>
+                  <option>Priya Nair</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="when">Preferred days or times</label>
+                <input id="when" name="when" type="text" placeholder="e.g. Thursday mornings, next week">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="message">Notes</label>
+                <textarea id="message" name="message" placeholder="Goals, references, or anything we should know"></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Send request</button>
+            <p class="form-hint">Sample site only - submitting shows a confirmation and clears the form. Nothing is emailed or stored.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">Lumen Lane</span>
+          <span class="logo-sub">Salon · York PA</span>
+        </a>
+        <p>A fictional boutique salon sample for York, PA - built as a portfolio mockup, not a real business.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Book</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Visit</h3>
+        <ul>
+          <li>214 Lumen Lane</li>
+          <li>York, PA 17401</li>
+          <li><a href="tel:+17175550188">(717) 555-0188</a></li>
+          <li><a href="mailto:hello@lumenlanesalon.example">hello@lumenlanesalon.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Lumen Lane Salon (sample)</span>
+      <span class="footer-note">Photos via Unsplash - see IMAGES-LICENSE.md</span>
+    </div>
+  </footer>
+
+  <div class="book-bar" role="region" aria-label="Quick book">
+    <div class="book-bar-inner">
+      <p class="book-bar-copy"><strong>Book your chair</strong> York · by appointment</p>
+      <a class="btn btn-gold" href="contact.html">Book</a>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

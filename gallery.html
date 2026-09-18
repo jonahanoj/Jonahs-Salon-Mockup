@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hair gallery from Lumen Lane Salon - cuts, color, and finishes in York, PA.">
+  <title>Gallery | Lumen Lane Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">Lumen Lane</span>
+        <span class="logo-sub">Salon · York PA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Book</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <p class="eyebrow">From the chair</p>
+        <h1>Gallery</h1>
+        <p class="section-lead">A few recent finishes - soft color, clean lines, and texture that moves.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-label="Hair gallery">
+      <div class="container">
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item--wide">
+            <img src="images/gallery-1.jpg" alt="Woman with long dark hair in soft face-framing layers" width="1200" height="750">
+            <figcaption class="gallery-caption">Soft layers</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gallery-2.jpg" alt="Woman with long brunette hair in a polished soft-wave blowout" width="800" height="1067">
+            <figcaption class="gallery-caption">Blowout</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gallery-3.jpg" alt="Back view of a short textured brunette bob" width="800" height="1067">
+            <figcaption class="gallery-caption">Textured bob</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gallery-4.jpg" alt="Portrait of a woman with dimensional dark brunette hair" width="800" height="1067">
+            <figcaption class="gallery-caption">Brunette depth</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/gallery-5.jpg" alt="Woman with long straight glossy honey-blonde hair" width="800" height="1067">
+            <figcaption class="gallery-caption">Gloss finish</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-item--wide">
+            <img src="images/gallery-6.jpg" alt="Back view of long lived-in balayage blonde waves" width="1200" height="750">
+            <figcaption class="gallery-caption">Lived-in blonde</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--blush ba-section" aria-labelledby="gal-ba-heading">
+      <div class="container ba-layout">
+        <div class="ba-copy">
+          <p class="eyebrow">Compare</p>
+          <h2 id="gal-ba-heading">Before and after again</h2>
+          <p class="section-lead">Same interactive slider - drag, touch, or use arrow keys to compare a color refresh.</p>
+        </div>
+        <div
+          class="ba-slider"
+          data-ba-slider
+          role="img"
+          aria-label="Before and after hair comparison slider">
+          <img class="ba-after" src="images/after.jpg" alt="" width="800" height="1000">
+          <div class="ba-before-wrap">
+            <img class="ba-before" src="images/before.jpg" alt="" width="800" height="1000">
+          </div>
+          <span class="ba-label ba-label--before">Before</span>
+          <span class="ba-label ba-label--after">After</span>
+          <button
+            type="button"
+            class="ba-handle"
+            aria-label="Reveal before and after. Use left and right arrow keys to adjust."
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="50"
+            role="slider">
+            <span class="ba-handle-line" aria-hidden="true"></span>
+            <span class="ba-handle-knob" aria-hidden="true">&#8249;&#8250;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ink cta-band" aria-labelledby="gal-cta">
+      <div class="container">
+        <h2 id="gal-cta">Want something like this?</h2>
+        <p class="section-lead">Bring a reference photo or point to a gallery look - we will tailor it to your hair.</p>
+        <div class="cta-actions">
+          <a class="btn btn-gold" href="contact.html">Book a consult</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">Lumen Lane</span>
+          <span class="logo-sub">Salon · York PA</span>
+        </a>
+        <p>A fictional boutique salon sample for York, PA - built as a portfolio mockup, not a real business.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Book</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Visit</h3>
+        <ul>
+          <li>214 Lumen Lane</li>
+          <li>York, PA 17401</li>
+          <li><a href="tel:+17175550188">(717) 555-0188</a></li>
+          <li><a href="mailto:hello@lumenlanesalon.example">hello@lumenlanesalon.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Lumen Lane Salon (sample)</span>
+      <span class="footer-note">Photos via Unsplash - see IMAGES-LICENSE.md</span>
+    </div>
+  </footer>
+
+  <div class="book-bar" role="region" aria-label="Quick book">
+    <div class="book-bar-inner">
+      <p class="book-bar-copy"><strong>Book your chair</strong> York · by appointment</p>
+      <a class="btn btn-gold" href="contact.html">Book</a>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
